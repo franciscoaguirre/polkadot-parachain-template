@@ -13,9 +13,17 @@ validator = true
 ws_port = 9955
 
 [[parachains]]
-id = 1000
+id = 2000
 
 [parachains.collator]
 name = "charlie"
 ws_port = 9988
 command = "parachain-template-node"
+
+[[parachains]]
+id = 1000
+chain = "asset-hub-polkadot-local"
+
+[parachains.collator]
+name = "asset-hub-collator"
+ws_port = 10000
