@@ -62,12 +62,14 @@ This template produces a parachain node.
 You still need a relaychain node - you can download the `polkadot`
 (and the accompanying `polkadot-prepare-worker` and `polkadot-execute-worker`)
 binaries from [Polkadot SDK releases](https://github.com/paritytech/polkadot-sdk/releases/latest).
+You can create a `bin` folder and put them there.
 
 Make sure to bring the parachain node - as well as `polkadot`, `polkadot-prepare-worker`, `polkadot-execute-worker`,
 and `zombienet` - into `PATH` like so:
 
 ```sh
 export PATH="./target/release/:$PATH"
+export PATH="./bin/:$PATH"
 ```
 
 This way, we can conveniently use them in the following steps.
